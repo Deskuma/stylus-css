@@ -1,52 +1,59 @@
-html {
-    background-color: #eeeeee;
-}
+@-moz-document domain("docs.python.org") {
+  :root {
+    --bg-color: #eeeeee;
+  }
 
-div.body {
-    background-color: #eeeeee;
-}
+  html {
+    background-color: var(--bg-color);
+  }
 
-div.related {
-    background-color: #eeeeee;
+  body {
+    background-color: var(--bg-color);
+  }
+
+  div.body {
+    background-color: var(--bg-color);
+  }
+
+  div.related {
+    background-color: var(--bg-color);
     margin-top: 0em;
     margin-bottom: 0em;
-}
+  }
 
-div.document {
-    background-color: #eeeeee;
-}
+  div.document {
+    background-color: var(--bg-color);
+  }
 
-.language_switcher_placeholder,
-.version_switcher_placeholder
-{
-    background-color: #eeeeee;
-}
+  .language_switcher_placeholder,
+  .version_switcher_placeholder {
+    background-color: var(--bg-color);
+  }
 
-span.pre {
+  span.pre {
     background-color: #ffffff;
-    text-shadow: 1px 1px 0px lightgray
-}
+    text-shadow: 1px 1px 0px lightgray;
+  }
 
-section {
+  section {
     margin-top: 1em;
-}
+  }
 
-div.body a,
-div.body a:visited,
-div.body a:hover
-{
-/*     color: navy; */
-/*     color: darkgreen; */
-/*     color: darkgoldenrod; */
+  div.body a,
+  div.body a:visited,
+  div.body a:hover {
+    /* color: navy; */
+    /* color: darkgreen; */
+    /* color: darkgoldenrod; */
     color: firebrick;
-}
+  }
 
-div.body h1,
-div.body h2,
-div.body h3,
-div.body h4,
-div.body h5,
-div.body h6 {
+  div.body h1,
+  div.body h2,
+  div.body h3,
+  div.body h4,
+  div.body h5,
+  div.body h6 {
     border-width: 1px 2px 2px 1px;
     border-color: gray;
     border-style: solid;
@@ -54,12 +61,13 @@ div.body h6 {
     padding: unset;
     padding-top: 0.12em;
     padding-left: 0.4em;
-    padding-bottom: 0.1em
-}
+    padding-bottom: 0.1em;
+  }
 
-div.body p {
+  div.body p {
     font-family: sans-serif;
     font-size: 90%;
     font-weight: 0;
     line-height: 1.6;
+  }
 }
