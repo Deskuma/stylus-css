@@ -3,6 +3,7 @@ Custom stylesheets using the Google chrome extension Stylus are saved and publis
 
 ## How to Stylus
 
+- link: Site <https://userstyles.world/>
 - link: Wiki <https://github.com/openstyles/stylus/wiki>
 - Chrome Web Store: <https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne>
 
