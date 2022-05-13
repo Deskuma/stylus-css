@@ -1,0 +1,65 @@
+html {
+    background-color: #eeeeee;
+}
+
+div.body {
+    background-color: #eeeeee;
+}
+
+div.related {
+    background-color: #eeeeee;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+div.document {
+    background-color: #eeeeee;
+}
+
+.language_switcher_placeholder,
+.version_switcher_placeholder
+{
+    background-color: #eeeeee;
+}
+
+span.pre {
+    background-color: #ffffff;
+    text-shadow: 1px 1px 0px lightgray
+}
+
+section {
+    margin-top: 1em;
+}
+
+div.body a,
+div.body a:visited,
+div.body a:hover
+{
+/*     color: navy; */
+/*     color: darkgreen; */
+/*     color: darkgoldenrod; */
+    color: firebrick;
+}
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    border-width: 1px 2px 2px 1px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 7px;
+    padding: unset;
+    padding-top: 0.12em;
+    padding-left: 0.4em;
+    padding-bottom: 0.1em
+}
+
+div.body p {
+    font-family: sans-serif;
+    font-size: 90%;
+    font-weight: 0;
+    line-height: 1.6;
+}
