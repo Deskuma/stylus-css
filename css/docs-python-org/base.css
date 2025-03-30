@@ -1,73 +1,98 @@
+/* ==UserStyle==
+@name         docs.python.org
+@version      20240408.11.03
+@namespace    userstyles.world/user/deskuma
+@description  # Documentation that is easy on the eyes
+
+## Python documentation page
+
+### feature
+
+Suppresses glaring white backgrounds.
+Highlight sections clearly.
+
+@author       deskuma
+@license      MIT
+==/UserStyle== */
 @-moz-document domain("docs.python.org") {
   :root {
-    --bg-color: #eeeeee;
+    --bg-color-light: #eee;
+    --bg-color-dark: #222;
   }
 
-  html {
-    background-color: var(--bg-color);
-  }
+  @media (prefers-color-scheme: dark) {
+    html {
+      background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
+    }
 
-  body {
-    background-color: var(--bg-color);
-  }
+    body {
+      font-family: sans-serif, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+      color: light-dark(var(--bg-color-dark), var(--bg-color-light));
+      background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
+    }
 
-  div.body {
-    background-color: var(--bg-color);
-  }
+    div.body {
+      background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
+    }
 
-  div.related {
-    background-color: var(--bg-color);
-    margin-top: 0em;
-    margin-bottom: 0em;
-  }
+    div.related {
+      background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
 
-  div.document {
-    background-color: var(--bg-color);
-  }
+    div.document {
+      background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
+    }
 
-  .language_switcher_placeholder,
-  .version_switcher_placeholder {
-    background-color: var(--bg-color);
-  }
+    .language_switcher_placeholder,
+    .version_switcher_placeholder {
+      background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
+    }
 
-  span.pre {
-    background-color: #ffffff;
-    text-shadow: 1px 1px 0px lightgray;
-  }
+    span.pre {
+      color: light-dark(blue, orange);
+      background-color: light-dark(white, #444);
+      text-shadow: 1px 1px 0px light-dark(#0dd, crimson);
+    }
 
-  section {
-    margin-top: 1em;
-  }
+    code {
+      background-color: light-dark(white, #444);
+    }
 
-  div.body a,
-  div.body a:visited,
-  div.body a:hover {
-    /* color: navy; */
-    /* color: darkgreen; */
-    /* color: darkgoldenrod; */
-    color: firebrick;
-  }
+    section {
+      margin-top: 1em;
+    }
 
-  div.body h1,
-  div.body h2,
-  div.body h3,
-  div.body h4,
-  div.body h5,
-  div.body h6 {
-    border-width: 1px 2px 2px 1px;
-    border-color: gray;
-    border-style: solid;
-    border-radius: 7px;
-    padding: unset;
-    padding-top: 0.12em;
-    padding-left: 0.4em;
-    padding-bottom: 0.1em;
-  }
+    div.body a,
+    div.body a:visited,
+    div.body a:hover {
+      /* color: navy; */
+      /* color: darkgreen; */
+      /* color: darkgoldenrod; */
+      color: light-dark(blue, orange);
+      text-shadow: 1px 1px 0px light-dark(darkturquoise, crimson);
+    }
 
-  div.body p {
-    font-family: sans-serif;
-    font-size: 90%;
-    font-weight: 0;
-    line-height: 1.6;
+    div.body h1,
+    div.body h2,
+    div.body h3,
+    div.body h4,
+    div.body h5,
+    div.body h6 {
+      border-width: 1px 2px 2px 1px;
+      border-color: gray;
+      border-style: solid;
+      border-radius: 7px;
+      padding: unset;
+      padding-top: 0.12em;
+      padding-left: 0.4em;
+      padding-bottom: 0.1em
+    }
+
+    div.body p {
+      font-family: Meiryo, sans-serif, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+      line-height: 1.8;
+    }
   }
 }

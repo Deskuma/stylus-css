@@ -17,5 +17,5 @@ Custom stylesheets using the Google chrome extension Stylus are saved and publis
 ### CSS
 
 - [docs.python.org](css/docs-python-org/)
-  - Stylus: <https://userstyles.world/style/4676/docs-python-org>
-    ![image](css/docs-python-org/sample-2.png)
+  - UserStyles.world: <https://userstyles.world/style/4676>
+    ![image](css/docs-python-org/stylus-thumbnail.webp)
